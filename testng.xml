@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/samia/LES COURS BOIS DE BOLOGNES/Session_Hiver_24/Automatisation 2/TP_Final_Automatisation/TP_Automatisation2_Final/TP_Automatisation2_Final">
+        <classes>
+            <class name="Tests.LoginPageTest">
+                <methods>
+                    <include name="testValidLogin"/>
+                    <include name="testInvalidLogin"/>
+                </methods>
+            </class>
+            <class name="Tests.ProductsPageTest">
+                <methods>
+                    <include name="testAffichageNomsProduits"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
