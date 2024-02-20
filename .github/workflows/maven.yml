@@ -22,7 +22,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3  # utilise l'action checkout pour récupérer le code source de GitHub (prépare le terrain)
-    - name: Set up JDK 19  #juste un nom de l'étape
+    - name: Set up JDK 17  #juste un nom de l'étape
       uses: actions/setup-java@v3  #installer le JDK
       with:
         java-version: '17'  #ici la version
