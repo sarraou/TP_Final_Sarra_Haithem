@@ -6,6 +6,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -23,19 +27,34 @@ public class ProductsPageTest {
     private LoginPage loginPage;
     private ProductsPage productsPage;
 
+    @Parameters("Browser")
     @BeforeMethod
-    public void SetUp() {
-        WebDriverManager.chromedriver().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
-        options.addArguments("--disable-gpu"); // Cette option est nécessaire sur certaines versions de Windows
-        options.addArguments("--window-size=1920,1200"); // Définit la taille de la fenêtre, importante pour certaines applications
-
-        productsPage = new ProductsPage(driver);
-        loginPage = new LoginPage(driver);
+    public void SetUp(String Browser) {
+        if (Browser.equals("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+            options.addArguments("--disable-gpu"); // Cette option est nécessaire sur certaines versions de Windows
+            options.addArguments("--window-size=1920,1200"); // Définit la taille de la fenêtre, importante pour certaines applications
+            driver = new ChromeDriver(options);
+        } else if (Browser.equals("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("--headless");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--window-size=1920,1200");
+            driver = new FirefoxDriver(options);
+        } else if (Browser.equals("edge")) {
+            WebDriverManager.edgedriver().setup();
+            EdgeOptions options = new EdgeOptions();
+            options.addArguments("--headless");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--window-size=1920,1200");
+            driver = new EdgeDriver(options);
+        }
         driver.get(url);
+        loginPage = new LoginPage(driver);
+        productsPage = new ProductsPage(driver);
     }
 
     @Test
@@ -45,7 +64,14 @@ public class ProductsPageTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlContains("https://www.saucedemo.com/inventory.html"));
         List<String> listeNomsProduits = productsPage.NomProduits();
-        Assert.assertTrue(!listeNomsProduits.isEmpty());
+
+        for (int i = 0; i < listeNomsProduits.size() - 1; i++) {
+            String produitActuel = listeNomsProduits.get(i);
+            String produitSuivant = listeNomsProduits.get(i + 1);
+            // Comparer les noms de produits
+            Assert.assertTrue(produitActuel.compareTo(produitSuivant) <= 0, "La liste de produits " +
+                    "n'est pas ordonnée en ordre croissant");
+        }
         System.out.println("Les Nom des produits affichés sur cette page :");
         for (String nom : listeNomsProduits) {
             System.out.println(nom);

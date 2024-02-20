@@ -6,6 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -22,18 +26,34 @@ public class LoginPageTest {
     String invUsername = "user_Invalide";
     String invPassword = "secret_Invalide";
     private LoginPage loginPage;
+    @Parameters("Browser")
     @BeforeMethod
-    public void SetUp() {
-        WebDriverManager.chromedriver().setup();
+    public void SetUp(String Browser) {
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
-        options.addArguments("--disable-gpu"); // Cette option est nécessaire sur certaines versions de Windows
-        options.addArguments("--window-size=1920,1200"); // Définit la taille de la fenêtre, importante pour certaines applications
-
-        loginPage = new LoginPage(driver);
+            if (Browser.equals("chrome")) {
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless");
+                options.addArguments("--disable-gpu"); // Cette option est nécessaire sur certaines versions de Windows
+                options.addArguments("--window-size=1920,1200"); // Définit la taille de la fenêtre, importante pour certaines applications
+                driver = new ChromeDriver(options);
+            } else if (Browser.equals("firefox")) {
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions options = new FirefoxOptions();
+                options.addArguments("--headless");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--window-size=1920,1200");
+                driver = new FirefoxDriver(options);
+            } else if (Browser.equals("edge")) {
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions options = new EdgeOptions();
+                options.addArguments("--headless");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--window-size=1920,1200");
+                driver = new EdgeDriver(options);
+            }
         driver.get(url);
+        loginPage = new LoginPage(driver);
     }
 
     // Méthode pour se connecter avec des identifiants valides
