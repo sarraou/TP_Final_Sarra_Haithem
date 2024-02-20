@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-19T20:54:43 HNE" name="All Test Suite" finished-at="2024-02-19T20:55:02 HNE" duration-ms="19270">
+  <suite started-at="2024-02-19T22:11:19 HNE" name="All Test Suite" finished-at="2024-02-19T22:11:38 HNE" duration-ms="19333">
     <groups>
     </groups>
-    <test started-at="2024-02-19T20:54:43 HNE" name="testChrome" finished-at="2024-02-19T20:54:52 HNE" duration-ms="9091">
+    <test started-at="2024-02-19T22:11:19 HNE" name="testChrome" finished-at="2024-02-19T22:11:28 HNE" duration-ms="9177">
       <class name="Tests.LoginPageTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@2ea227af]" started-at="2024-02-19T20:54:43 HNE" name="SetUp" finished-at="2024-02-19T20:54:48 HNE" duration-ms="5488" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@3cc2931c]" started-at="2024-02-19T22:11:19 HNE" name="SetUp" finished-at="2024-02-19T22:11:24 HNE" duration-ms="5351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testValidLogin()[pri:1, instance:Tests.LoginPageTest@2ea227af]" started-at="2024-02-19T20:54:48 HNE" name="testValidLogin" finished-at="2024-02-19T20:54:48 HNE" duration-ms="269" status="PASS">
+        <test-method signature="testValidLogin()[pri:1, instance:Tests.LoginPageTest@3cc2931c]" started-at="2024-02-19T22:11:24 HNE" name="testValidLogin" finished-at="2024-02-19T22:11:24 HNE" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@2ea227af]" started-at="2024-02-19T20:54:48 HNE" name="tearDown" finished-at="2024-02-19T20:54:49 HNE" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@3cc2931c]" started-at="2024-02-19T22:11:24 HNE" name="tearDown" finished-at="2024-02-19T22:11:25 HNE" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@2ea227af]" started-at="2024-02-19T20:54:49 HNE" name="SetUp" finished-at="2024-02-19T20:54:50 HNE" duration-ms="1184" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@3cc2931c]" started-at="2024-02-19T22:11:25 HNE" name="SetUp" finished-at="2024-02-19T22:11:26 HNE" duration-ms="1157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,17 +37,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testInValidLogin()[pri:2, instance:Tests.LoginPageTest@2ea227af]" started-at="2024-02-19T20:54:50 HNE" name="testInValidLogin" finished-at="2024-02-19T20:54:50 HNE" duration-ms="264" status="PASS">
+        <test-method signature="testInValidLogin()[pri:2, instance:Tests.LoginPageTest@3cc2931c]" started-at="2024-02-19T22:11:26 HNE" name="testInValidLogin" finished-at="2024-02-19T22:11:26 HNE" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@2ea227af]" started-at="2024-02-19T20:54:50 HNE" name="tearDown" finished-at="2024-02-19T20:54:50 HNE" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@3cc2931c]" started-at="2024-02-19T22:11:26 HNE" name="tearDown" finished-at="2024-02-19T22:11:26 HNE" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.LoginPageTest -->
       <class name="Tests.ProductsPageTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.ProductsPageTest@5a63f509]" started-at="2024-02-19T20:54:50 HNE" name="SetUp" finished-at="2024-02-19T20:54:51 HNE" duration-ms="1195" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.ProductsPageTest@4a22f9e2]" started-at="2024-02-19T22:11:26 HNE" name="SetUp" finished-at="2024-02-19T22:11:27 HNE" duration-ms="1286" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,19 +58,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testAffichageNomsProduits()[pri:0, instance:Tests.ProductsPageTest@5a63f509]" started-at="2024-02-19T20:54:51 HNE" name="testAffichageNomsProduits" finished-at="2024-02-19T20:54:52 HNE" duration-ms="405" status="PASS">
+        <test-method signature="testAffichageNomsProduits()[pri:0, instance:Tests.ProductsPageTest@4a22f9e2]" started-at="2024-02-19T22:11:27 HNE" name="testAffichageNomsProduits" finished-at="2024-02-19T22:11:28 HNE" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAffichageNomsProduits -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductsPageTest@5a63f509]" started-at="2024-02-19T20:54:52 HNE" name="tearDown" finished-at="2024-02-19T20:54:52 HNE" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductsPageTest@4a22f9e2]" started-at="2024-02-19T22:11:28 HNE" name="tearDown" finished-at="2024-02-19T22:11:28 HNE" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.ProductsPageTest -->
     </test> <!-- testChrome -->
-    <test started-at="2024-02-19T20:54:52 HNE" name="testEdge" finished-at="2024-02-19T20:55:02 HNE" duration-ms="10158">
+    <test started-at="2024-02-19T22:11:28 HNE" name="testEdge" finished-at="2024-02-19T22:11:38 HNE" duration-ms="10138">
       <class name="Tests.LoginPageTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@3d51f06e]" started-at="2024-02-19T20:54:52 HNE" name="SetUp" finished-at="2024-02-19T20:54:55 HNE" duration-ms="3084" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@15c43bd9]" started-at="2024-02-19T22:11:28 HNE" name="SetUp" finished-at="2024-02-19T22:11:31 HNE" duration-ms="2968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,15 +81,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testValidLogin()[pri:1, instance:Tests.LoginPageTest@3d51f06e]" started-at="2024-02-19T20:54:55 HNE" name="testValidLogin" finished-at="2024-02-19T20:54:55 HNE" duration-ms="294" status="PASS">
+        <test-method signature="testValidLogin()[pri:1, instance:Tests.LoginPageTest@15c43bd9]" started-at="2024-02-19T22:11:31 HNE" name="testValidLogin" finished-at="2024-02-19T22:11:31 HNE" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@3d51f06e]" started-at="2024-02-19T20:54:55 HNE" name="tearDown" finished-at="2024-02-19T20:54:55 HNE" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@15c43bd9]" started-at="2024-02-19T22:11:31 HNE" name="tearDown" finished-at="2024-02-19T22:11:31 HNE" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@3d51f06e]" started-at="2024-02-19T20:54:55 HNE" name="SetUp" finished-at="2024-02-19T20:54:58 HNE" duration-ms="2852" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.LoginPageTest@15c43bd9]" started-at="2024-02-19T22:11:31 HNE" name="SetUp" finished-at="2024-02-19T22:11:34 HNE" duration-ms="2978" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,17 +100,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testInValidLogin()[pri:2, instance:Tests.LoginPageTest@3d51f06e]" started-at="2024-02-19T20:54:58 HNE" name="testInValidLogin" finished-at="2024-02-19T20:54:58 HNE" duration-ms="254" status="PASS">
+        <test-method signature="testInValidLogin()[pri:2, instance:Tests.LoginPageTest@15c43bd9]" started-at="2024-02-19T22:11:34 HNE" name="testInValidLogin" finished-at="2024-02-19T22:11:35 HNE" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@3d51f06e]" started-at="2024-02-19T20:54:58 HNE" name="tearDown" finished-at="2024-02-19T20:54:59 HNE" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginPageTest@15c43bd9]" started-at="2024-02-19T22:11:35 HNE" name="tearDown" finished-at="2024-02-19T22:11:35 HNE" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.LoginPageTest -->
       <class name="Tests.ProductsPageTest">
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.ProductsPageTest@7ed7259e]" started-at="2024-02-19T20:54:59 HNE" name="SetUp" finished-at="2024-02-19T20:55:01 HNE" duration-ms="2875" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:Tests.ProductsPageTest@3d74bf60]" started-at="2024-02-19T22:11:35 HNE" name="SetUp" finished-at="2024-02-19T22:11:37 HNE" duration-ms="2802" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,11 +121,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testAffichageNomsProduits()[pri:0, instance:Tests.ProductsPageTest@7ed7259e]" started-at="2024-02-19T20:55:01 HNE" name="testAffichageNomsProduits" finished-at="2024-02-19T20:55:02 HNE" duration-ms="391" status="PASS">
+        <test-method signature="testAffichageNomsProduits()[pri:0, instance:Tests.ProductsPageTest@3d74bf60]" started-at="2024-02-19T22:11:37 HNE" name="testAffichageNomsProduits" finished-at="2024-02-19T22:11:38 HNE" duration-ms="468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAffichageNomsProduits -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductsPageTest@7ed7259e]" started-at="2024-02-19T20:55:02 HNE" name="tearDown" finished-at="2024-02-19T20:55:02 HNE" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ProductsPageTest@3d74bf60]" started-at="2024-02-19T22:11:38 HNE" name="tearDown" finished-at="2024-02-19T22:11:38 HNE" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
