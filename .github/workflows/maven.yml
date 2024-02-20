@@ -25,7 +25,7 @@ jobs:
     - name: Set up JDK 19  #juste un nom de l'étape
       uses: actions/setup-java@v3  #installer le JDK
       with:
-        java-version: '19'  #ici la version
+        java-version: '17'  #ici la version
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
