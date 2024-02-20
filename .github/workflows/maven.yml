@@ -31,7 +31,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml  #pour exécuter le maven
     - name: Upload target folder report
-      uses : actions/upload-artifact@v2
+      uses : actions/upload-artifact@v3
       with:
        name: rapport de tests
        path : |
